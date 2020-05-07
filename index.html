@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Clone code player</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <div id="header">
+    <div id="logo">
+      jasminHadzialic
+    </div>
+    
+    <div id="buttonContainer">
+      <div class="toggleButton active" id="html">HTML</div>
+      <div class="toggleButton" id="css">CSS</div>
+      <div class="toggleButton" id="javascript">JavaScript</div>
+      <div class="toggleButton active" id="output">output</div>
+    </div>
+
+  </div>
+
+  <div id="bodyContainer">
+  
+    <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello world!</p></textarea>
+    <textarea id="cssPanel" class="panel hidden">p{color:red;}</textarea>
+    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML ="Hello ...";</textarea>
+   
+    <iframe id="outputPanel" class="panel"></iframe>
+  
+  </div>
+
+	
+
+</body>
+</html>
